@@ -201,6 +201,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 android.hardware.health@2.1-impl \
 android.hardware.health@2.1-service \
+chargeonlymode
 
 # IPv6
 PRODUCT_PACKAGES += \
