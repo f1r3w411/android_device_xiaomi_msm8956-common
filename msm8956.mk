@@ -197,9 +197,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/vendor/etc/sec_config
 
-# Health
+# Health HAL
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service
+android.hardware.health@2.1-impl \
+android.hardware.health@2.1-service \
 
 # IPv6
 PRODUCT_PACKAGES += \
