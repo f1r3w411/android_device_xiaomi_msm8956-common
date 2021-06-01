@@ -300,7 +300,7 @@ PRODUCT_BOOT_JARS += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.mokee.touch@1.0-service.xiaomi_msm8956
+    vendor.lineage.touch@1.0-service.xiaomi_msm8956
 
 # Trust HAL
 PRODUCT_PACKAGES += \
