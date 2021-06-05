@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
 
 # APEX
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ld.config.txt:system/etc/swcodec/ld.config.txt
+    $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -258,7 +258,7 @@ PRODUCT_PACKAGES += \
 
 # Privapp Whitelist
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
 # Power
 PRODUCT_PACKAGES += \
