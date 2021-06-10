@@ -70,9 +70,15 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.audio@6.0 \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.effect@6.0-service \
+    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.2-service \
     audio.a2dp.default \
     audio.primary.msm8952 \
     audio.r_submix.default \
@@ -86,15 +92,7 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/aanc_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aanc_tuning_mixer.txt \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    $(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9306.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9306.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9330.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9330.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9335.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9335.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # XML Audio configuration files
 PRODUCT_COPY_FILES += \
