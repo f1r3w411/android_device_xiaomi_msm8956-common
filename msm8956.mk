@@ -200,19 +200,19 @@ PRODUCT_COPY_FILES += \
 
 # Health HAL
 PRODUCT_PACKAGES += \
-android.hardware.health@2.1-impl \
-android.hardware.health@2.1-service \
-chargeonlymode
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service \
+    chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
-android.hidl.base@1.0 \
-android.hidl.base@1.0_system \
-android.hidl.manager@1.0 \
-libhidltransport \
-libhidltransport.vendor \
-libhwbinder \
-libhwbinder.vendor
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0_system \
+    android.hidl.manager@1.0 \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # IPv6
 PRODUCT_PACKAGES += \
