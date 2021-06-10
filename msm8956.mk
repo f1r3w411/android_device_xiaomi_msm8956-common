@@ -304,6 +304,9 @@ PRODUCT_PACKAGES += \
     sensors.msm8952 \
     vendor.qti.hardware.display.mapper@1.1.vendor
 
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v27/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.frameworks.sensorservice@1.0-v27.so
+
 # Telephony
 PRODUCT_PACKAGES += \
     qti-telephony-common \
