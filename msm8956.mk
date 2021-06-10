@@ -214,6 +214,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
+    vendor.qti.hardware.cryptfshw@1.0-service-dlsym-qti
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
