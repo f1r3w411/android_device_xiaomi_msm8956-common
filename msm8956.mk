@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 $(call inherit-product, vendor/xiaomi/msm8956-common/msm8956-common-vendor.mk)
 
 # Faceunlock
-$(call inherit-product, external/motorola/faceunlock/config.mk)
+# $(call inherit-product, external/motorola/faceunlock/config.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
